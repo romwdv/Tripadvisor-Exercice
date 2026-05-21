@@ -1,5 +1,6 @@
 @media screen and (max-width: 1184px) {
-  .sm-display {
+  /* Block navigation <Hotel, Location...> */
+  .nav > .sm-display {
     display: block;
   }
 
@@ -8,12 +9,79 @@
   }
 
   .nav > div {
-    width: calc((100% - 50px) / 4);
+    width: calc((100% - 30px) / 4);
   }
 }
 
 @media screen and (max-width: 1024px) {
+  /* Nav header */
+
+  nav > div > .sm-display {
+    display: block;
+  }
+  nav > div > a {
+    display: none;
+  }
+
+  /* Pictures */
+  .pictures {
+    height: 270px;
+  }
+
+  /* Description */
+
+  .description .col-1 {
+    width: 100%;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .description .col-2 {
+    flex-direction: row;
+    width: 100%;
+  }
+  .description .col-2 div:last-child,
+  .description .col-2 div:first-child {
+    width: 100%;
+  }
+  .description .col-2 div:last-child {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  /* Nav Header */
+
+  .hide {
+    display: none;
+  }
+
+  .hide-lg {
+    display: block;
+  }
+
+  header .container img {
+    width: 132px;
+  }
+
+  /* Block navigation <Hotel, Location...> */
+  .nav > .sm-display {
+    display: block;
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+
+  .nav > div {
+    /* width: calc((100% - 30px) / 4); */
+    flex-shrink: 0;
+    width: fit-content;
+    padding: 12px 15px;
+    gap: 5px;
+  }
 }

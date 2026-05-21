@@ -3,13 +3,12 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 10px;
   font-size: 18px;
   font-family: TS-reg, serif;
   line-height: 20px;
   /* font-weight: 900; */
 }
-
 .icon-travelers_choice_badge {
   font-size: 24px;
 }
@@ -52,6 +51,7 @@ h1 > span {
 header .container {
   display: flex;
   max-width: 1095px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -66,6 +66,8 @@ header .container img {
 .container {
   display: flex;
   max-width: 1095px;
+  width: 100%;
+  margin: 0 10px;
 }
 
 nav {
@@ -116,6 +118,7 @@ header nav > div:hover {
 
 .main {
   max-width: 1095px;
+  width: 100%;
   margin-top: 50px;
 }
 
@@ -161,6 +164,7 @@ header nav > div:hover {
 
 .col-1 {
   position: relative;
+  width: 50%;
 }
 .pictures > .col-1 img {
   width: 100%;
@@ -188,7 +192,7 @@ header nav > div:hover {
   display: flex;
   gap: 2px;
   flex-direction: column;
-  width: 480px;
+  width: 50%;
 }
 
 .pictures > .col-2 img:first-child {
@@ -202,6 +206,7 @@ header nav > div:hover {
 
 .menu {
   max-width: 1095px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,6 +230,7 @@ header nav > div:hover {
 
 .description {
   max-width: 1095px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
@@ -247,6 +253,8 @@ header nav > div:hover {
 }
 
 .description .col-2 {
+  display: flex;
+  flex-direction: column;
   background-color: #ff5d5d;
   width: calc(50% - 120px);
   border-radius: 10px;
@@ -282,6 +290,7 @@ p {
 
 section {
   max-width: 1095px;
+  width: 100%;
   margin-bottom: 80px;
   font-weight: 100;
 }
@@ -462,8 +471,13 @@ footer > p > span {
   margin: 0 !important;
 }
 
-/* Classe Responsive */
+/* Responsive */
 
-.sm-display {
+.nav > .sm-display,
+nav > div > .sm-display {
+  display: none;
+}
+
+.hide-lg {
   display: none;
 }
