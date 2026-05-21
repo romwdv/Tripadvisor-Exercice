@@ -96,5 +96,26 @@
     width: 100%;
   }
 
+  /*Section 1*/
+
+  .section-1 > div {
+    flex-direction: column;
+    /* display: flex;
+  justify-content: center;
+  overflow-x: hidden; */
+  }
+
+  .section-1 .col-1 {
+    margin-bottom: 20px;
+  }
+
+  /*Carroussel*/
+  .carroussel {
+    width: calc((100%) / 1.5);
+  }
+
   /* Guide */
+  .section-2 > div {
+    overflow: scroll;
+  }
 }

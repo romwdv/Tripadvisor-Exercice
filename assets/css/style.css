@@ -389,8 +389,8 @@ section .carroussel span {
 }
 
 .guide {
-  /* width: 355px; */
-  /* height: 274px; */
+  width: 355px;
+  height: 274px;
   flex-shrink: 0;
   background-color: #ff5d5d;
 }
