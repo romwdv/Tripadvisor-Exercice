@@ -84,4 +84,17 @@
     padding: 12px 15px;
     gap: 5px;
   }
+
+  /* Description */
+
+  .description > .col-2 {
+    flex-direction: column;
+  }
+
+  .description .col-2 div:last-child {
+    min-height: 180px;
+    width: 100%;
+  }
+
+  /* Guide */
 }

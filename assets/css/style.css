@@ -51,6 +51,7 @@ h1 > span {
 header .container {
   display: flex;
   max-width: 1095px;
+  padding: 0 15px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -388,8 +389,9 @@ section .carroussel span {
 }
 
 .guide {
-  width: 355px;
-  height: 274px;
+  /* width: 355px; */
+  /* height: 274px; */
+  flex-shrink: 0;
   background-color: #ff5d5d;
 }
 
