@@ -1,0 +1,19 @@
+@media screen and (max-width: 1184px) {
+  .sm-display {
+    display: block;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav > div {
+    width: calc((100% - 50px) / 4);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
