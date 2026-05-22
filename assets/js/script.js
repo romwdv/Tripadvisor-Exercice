@@ -33,6 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
       afterSubmitForm.classList.add("hide-modal");
       submitThanks.classList.remove("hide-modal");
       const response = await axios.post("http://localhost:3000/form", data);
-      console.log(response);
     });
 });
