@@ -2,12 +2,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const connectModal = document.querySelector("#connect");
   const modal = document.querySelector("#modal");
   const closeModal = document.querySelector("#close-modal");
+  const afterSubmitForm = document.getElementById("formContent");
+  const submitThanks = document.getElementById("submitThanks");
 
+  // Ouverture de la modal
   connectModal.addEventListener("click", (e) => {
     modal.classList.remove("hide-modal");
   });
 
-  closeModal.addEventListener("click", (e) => {
+  // Fermeture de la modal
+  closeModal.addEventListener("click", async (e) => {
     modal.classList.add("hide-modal");
+    const toReset = document.getElementById("contactForm");
+    toReset.reset();
+    afterSubmitForm.classList.remove("hide-modal");
+    submitThanks.classList.add("hide-modal");
   });
+
+  // Envoi des données
+  document
+    .querySelector("#contactForm")
+    .addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = {
+        firstname: document.querySelector("#firstname").value,
+        lastname: document.querySelector("#lastname").value,
+        email: document.querySelector("#email").value,
+        sujet: document.querySelector("#sujet").value,
+      };
+      console.log(data);
+      e.target.reset();
+      afterSubmitForm.classList.add("hide-modal");
+      submitThanks.classList.remove("hide-modal");
+    });
 });
