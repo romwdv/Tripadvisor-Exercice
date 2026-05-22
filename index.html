@@ -32,7 +32,7 @@
               <a href="#"><i class="ri-notification-2-line"></i> Alertes</a>
               <i class="ri-notification-2-line sm-display"></i>
             </div>
-            <button class="login hide">Connectez-vous</button>
+            <button id="connect" class="login hide">Connectez-vous</button>
             <div>
               <i class="ri-search-line hide-lg"></i>
             </div>
@@ -45,7 +45,7 @@
         <!-- End Header container-->
       </div>
     </header>
-    <!-- Start Main container-->
+    <!-- Start Main container--->
     <div class="wrapper">
       <div class="main">
         <h1><span>Explorez</span> Paris</h1>
@@ -505,5 +505,45 @@
     </footer>
     <!-- Fin Wrapper -->
     <!-- End Main container-->
+    <div id="modal" class="modal hide-modal">
+      <div class="container-form">
+        <i class="ri-close-large-line"></i>
+        <div class="form">
+          <h2>Formulaire</h2>
+          <form action="">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              value=""
+              placeholder="Votre prénom"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              value=""
+              placeholder="Votre nom"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value=""
+              placeholder="Votre Email"
+            />
+            <textarea
+              name="sujet"
+              id="sujet"
+              value=""
+              cols="30"
+              rows="5"
+              placeholder="Votre message"
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
