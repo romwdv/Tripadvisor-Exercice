@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
         email: document.querySelector("#email").value,
         sujet: document.querySelector("#sujet").value,
       };
-      console.log(data);
-      e.target.reset();
       afterSubmitForm.classList.add("hide-modal");
       submitThanks.classList.remove("hide-modal");
+      const response = await axios.post("http://localhost:3000/form", data);
+      console.log(response);
     });
 });
