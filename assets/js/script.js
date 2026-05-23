@@ -32,6 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
       };
       afterSubmitForm.classList.add("hide-modal");
       submitThanks.classList.remove("hide-modal");
+<<<<<<< HEAD
       const response = await axios.post("http://localhost:3000/form", data);
+=======
+      const response = await axios.post(
+        "https://site--tripadvisorback--28mw4x9cgqbh.code.run/form",
+        data,
+      );
+      console.log(response);
+>>>>>>> develop
     });
 });
