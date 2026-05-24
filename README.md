@@ -10,7 +10,7 @@
 
 ## 📋 Présentation
 
-Ce projet reproduit la page d'accueil de TripAdvisor pour la destination **Paris**. Il comprend :
+Ce projet reproduit la page d'accueil d'un site type TripAdvisor pour la destination **Paris**. Il comprend :
 
 - Un **header** avec navigation et icônes responsives
 - Une **hero section** avec galerie de photos et navigation par catégories (Hôtels, Restaurants, Activités…)
@@ -84,32 +84,14 @@ Le formulaire `#contactForm` collecte : prénom, nom, email et message.
 
 À la soumission, les données sont envoyées via une requête `POST` avec Axios vers le backend (hébergé dans un dépôt séparé). En cas de succès, le formulaire est remplacé par un message de confirmation (`#submitThanks`) ; en cas d'erreur, une alerte est affichée.
 
-```js
-axios
-  .post("URL_DU_BACKEND/endpoint", {
-    firstname,
-    lastname,
-    email,
-    sujet,
-  })
-  .then(() => {
-    // Afficher le message de remerciement
-    formContent.classList.add("hide-modal");
-    submitThanks.classList.remove("hide-modal");
-  })
-  .catch((error) => {
-    alert("Une erreur est survenue.");
-  });
-```
-
 ---
 
 ## 🔗 Dépôts liés
 
-| Repo         | Description                               |
-| ------------ | ----------------------------------------- |
-| Ce dépôt     | Frontend — HTML / CSS / JS                |
-| [Backend](#) | API — traitement du formulaire de contact |
+| Repo                                                     | Description                               |
+| -------------------------------------------------------- | ----------------------------------------- |
+| Ce dépôt                                                 | Frontend — HTML / CSS / JS                |
+| [Backend](https://github.com/romwdv/Tripadvisor-backend) | API — traitement du formulaire de contact |
 
 ---
 
