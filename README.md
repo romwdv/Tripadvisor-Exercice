@@ -75,7 +75,6 @@ Les classes utilitaires `.hide`, `.hide-lg` et `.sm-display` dans le HTML pilote
 
 - Le bouton **"Connectez-vous"** (`#connect`) ouvre la modal `#modal`
 - La croix `#close-modal` ferme la modal
-- Un clic en dehors du conteneur du formulaire ferme également la modal
 - À l'ouverture / fermeture, la classe `hide-modal` est basculée sur la modal
 
 ### Formulaire & Axios
